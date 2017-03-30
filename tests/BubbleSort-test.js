@@ -8,6 +8,12 @@ describe('BubbleSort', () => {
     assert.isFunction(bubble)
   })
 
+  it('should sort 2 numbers from low to high', () => {
+    let numbers = [7, 5]
+
+    assert.deepEqual(bubble(numbers), [5, 7])
+  })
+
   it('should sort number from low to high', () => {
     let numbers = [5, 7, 1, 9, 3, 20, 3]
 
