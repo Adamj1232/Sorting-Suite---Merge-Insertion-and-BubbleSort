@@ -18,7 +18,8 @@ export const sort = (left, right) => {
 
   while (left.length || right.length) {
     if (left.length && right.length) {
-      (left[0] >= right[0]) ? result.push(right.shift()) : result.push(left.shift());
+      (left[0] >= right[0]) ? result.push(right.shift())
+                            : result.push(left.shift());
     } else if (left.length) {
       result.push(left.shift());
     } else {
